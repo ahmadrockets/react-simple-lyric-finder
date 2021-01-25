@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './Style.css';
 import SongResultPage from './SongResultPage';
 import axios from "axios";
+import {API_URL,API_KEY} from '../Config';
 
 
 class SongPage extends Component{
@@ -19,7 +20,7 @@ class SongPage extends Component{
     })
   }
   searchSong = e =>{
-    axios.get(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.inputValue}&page_size=100&s_track_rating=desc&apikey=YourApiKey`)
+    axios.get(`${API_URL}track.search?q_track=${this.state.inputValue}&page_size=100&s_track_rating=desc&apikey=${API_KEY}`)
       .then(res => {
         const respondata = res.data.message.body.track_list
         this.setState({

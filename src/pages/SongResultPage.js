@@ -25,7 +25,7 @@ class SongResultPage extends Component{
                                     <td align="left">{song.track.album_name}</td>
                                     <td align="left">{song.track.track_name}</td>
                                     <td align="left">
-                                        <Link className="btn btn-sm btn-primary">Show Lyric</Link>
+                                        <a target="_blank" href={song.track.track_share_url} className="btn btn-sm btn-primary">Show Lyric</a>
                                     </td>
                                 </tr>
                             )
