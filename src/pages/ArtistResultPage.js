@@ -18,7 +18,7 @@ const ArtistResultPage = () =>{
           artists.map((artist,index)=>
           <tr key={index}>
             <td>{artist.artist.artist_name}</td>
-            <td><a className="btn btn-sm btn-primary">Detail</a></td>
+            <td><a disabled className="btn btn-sm btn-primary">Detail</a></td>
           </tr>
           )
         }
