@@ -17,7 +17,7 @@ class Home extends Component{
               </div>
               <div className="card-body">
                 <h5 className="card-title">Simple Apps Cari Lirik (Find Lyric)</h5>
-                <p className="card-text">React JS, React Router, Bootstrap, MusixMatch API</p>
+                <p className="card-text">React JS, React Router, Bootstrap, MusixMatch API, Axios</p>
                 <p className="card-text">By : Ahmad Fahrudin</p>
                 <Link to="/song">
                   <button className="btn btn-primary btn-margin">Find Song</button>
